@@ -1,6 +1,6 @@
 {
   "name": "swifthost",
-  "version": "2.0.1",
+  "version": "1.2.0",
   "description": "Expose local servers to the internet with advanced management dashboard",
   "main": "dist/sdk/deploy.js",
   "types": "dist/sdk/deploy.d.ts",
