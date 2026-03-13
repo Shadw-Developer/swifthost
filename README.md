@@ -40,35 +40,50 @@
 
 ## 📦 Instalação
 
-Linux (Ubuntu/Debian)
+Instalação Global (Recomendado)
+
 ```bash
-# Usando NodeSource
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+# Passo 01
+git clone https://github.com/Shadw-Developer/swifthost.git
 
-sudo apt-get install -y nodejs
+# Passo 02
+cd swifthost
 
-# Ou usando nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+# Passo 03
+npm install
 
-nvm install 20
-
-nvm use 20
+# Passo 04
+npm link && npm i -g .
 ```
 
-Windows
+# Instalação para Desenvolvimento
+clone este repositório
 ```bash
-# Usando winget
-winget install OpenJS.NodeJS
+git clone https://github.com/Shadw-Developer/swifthost.git
+```
 
-# Ou baixe diretamente de nodejs.org
-# https://nodejs.org/en/download/
+entre na pasta do projeto e instale as dependências.
+
+```bash
+cd swifthost && npm install
+```
+
+# Verificação
+Execute o comando doctor para verificar se tudo está configurado corretamente:
+
+```bash
+# Se estiver instalado globalmente
+swf doctor
+
+# Se estiver apenas clonado o repositório para um projeto já existente.
+node swifthost/dist/index.js doctor
 ```
 
 📋 Pré‑requisitos
  * Node.js: v18.0.0 ou superior.
  * cloudflared: Instalado e disponível no seu PATH.
    > O comando swf doctor verifica isso automaticamente para você.
-   > 
+
 ## ⚡ Uso Rápido
 Exponha seu servidor local (ex: app Next.js, API Express) em segundos:
 swf http://localhost:3000
