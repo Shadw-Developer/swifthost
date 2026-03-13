@@ -40,13 +40,28 @@
 
 ## 📦 Instalação
 
-### Via npm (recomendado)
-
+Linux (Ubuntu/Debian)
 ```bash
-npm install -g swifthost
+# Usando NodeSource
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 
-# Ou use diretamente via npx:
-npx swifthost http://localhost:3000
+sudo apt-get install -y nodejs
+
+# Ou usando nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+nvm install 20
+
+nvm use 20
+```
+
+Windows
+```bash
+# Usando winget
+winget install OpenJS.NodeJS
+
+# Ou baixe diretamente de nodejs.org
+# https://nodejs.org/en/download/
 ```
 
 📋 Pré‑requisitos
